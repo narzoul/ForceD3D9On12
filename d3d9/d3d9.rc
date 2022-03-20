@@ -1,0 +1,33 @@
+#include "../ForceD3D9On12/Version.h"
+
+#include <winver.h>
+
+VS_VERSION_INFO   VERSIONINFO
+FILEVERSION       VERSION_NUMBER
+PRODUCTVERSION    VERSION_NUMBER
+FILEFLAGSMASK     VS_FFI_FILEFLAGSMASK
+FILEFLAGS         0
+FILEOS            VOS_NT_WINDOWS32
+FILETYPE          VFT_DLL
+FILESUBTYPE       VFT2_UNKNOWN
+{
+    BLOCK "StringFileInfo"
+    {
+        BLOCK "04090000"
+        {
+            VALUE "CompanyName", ""
+            VALUE "FileDescription", "https://github.com/narzoul/ForceD3D9On12"
+            VALUE "FileVersion", VERSION_STRING
+            VALUE "InternalName", "d3d9.dll"
+            VALUE "LegalCopyright", "BSD Zero Clause License"
+            VALUE "OriginalFilename", "d3d9.dll"
+            VALUE "ProductName", "ForceD3D9On12 Direct3D 9 wrapper"
+            VALUE "ProductVersion", VERSION_STRING
+        }
+    }
+
+    BLOCK "VarFileInfo"
+    {
+        VALUE "Translation", 0x409, 0
+    }
+}
